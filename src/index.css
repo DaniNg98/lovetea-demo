@@ -1,0 +1,388 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+header {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  background-color: rgb(48, 48, 48);
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: 1px 1px 1px 1px rgba(116, 110, 110, 0.199);
+  z-index: 1;
+  font-size: 18px;
+}
+.header-inner {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.logo {
+  display: flex;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #ece9ea;
+}
+.logo:hover {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  margin: 0 0px 4px 10px;
+  width: 60px;
+}
+
+.navbar-logo-name {
+  font-family: 'Comfortaa', cursive;
+  margin: 20px 0 0 9px;
+  font-size: 18px;
+}
+
+section {
+  height: 100vh;
+}
+
+nav {
+  flex: 0.5;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*
+footer {
+  height: 570px;
+  background-color: #505152;
+  color: white;
+}
+*/
+
+.hamburger-btn {
+  font-size: 1.7rem;
+  position: absolute;
+  bottom: 0;
+  width: 46px;
+  height: 83px;
+  right: 35px;
+  outline: none;
+  background-color: rgb(48, 48, 48);
+  color: whitesmoke;
+}
+.addTransiton {
+  transform: translateX(170px);
+  transition: transform 0.5s ease-in-out;
+}
+.removeTransition {
+  transform: translateX(20px);
+  transition: transform 0.5s ease-in-out;
+}
+
+#sidebar-list {
+  background-color: rgb(48, 48, 48);
+  height: 100vh;
+  width: 160px;
+  position: absolute;
+  z-index: 2000;
+  right: 0;
+  top: 0;
+  margin-top: 70px;
+  margin-right: 10px;
+}
+.nav-big {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  font-weight: bold;
+}
+
+.nav-big-link {
+  cursor: pointer;
+  color: white;
+  text-decoration: none !important;
+}
+
+.nav-small {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  margin: auto;
+  height: 40%;
+  margin-top: 50px;
+  width: 80%;
+}
+.nav-small-link {
+  cursor: pointer;
+  color: whitesmoke;
+  padding-bottom: 5px;
+}
+
+.heroBlock {
+  position: relative;
+  z-index: -1;
+}
+
+.heroPic {
+  max-width: 60%;
+  height: 100%;
+  align-items: center;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.backgroundTea {
+  float: left;
+  background-color: rgb(180, 156, 171);
+  color: rgb(228, 228, 228);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5vmin;
+  width: 50%;
+}
+
+.tea {
+  margin-left: 20%;
+  margin-right: 20%;
+  max-width: 100%;
+  height: auto;
+  font-size: 100%;
+  padding: 30px 30px;
+  background-color: rgb(156, 131, 147);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.backgroundSushi {
+  background-color: rgb(156, 131, 147);
+  color: rgb(228, 228, 228);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vmin;
+  width: 50%;
+}
+
+.sushi {
+  margin-left: 20%;
+  margin-right: 20%;
+  max-width: 100%;
+  height: auto;
+  font-size: 120%;
+  padding: 30px 38px;
+  background-color: rgb(180, 156, 171);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.Store-block {
+  background: url('./Images/ourstore.jpg');
+  max-width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.store-header {
+  margin-bottom: 40px;
+  padding-top: 80px;
+}
+
+.store-font {
+  font-family: 'Comfortaa', cursive;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.carousel-pics {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  z-index: -1;
+}
+
+/* Footer */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer {
+  background-color: rgb(80, 80, 80);
+  color: #bbb;
+  line-height: 1.5;
+}
+footer a {
+  text-decoration: none;
+  color: #eee;
+}
+a:hover {
+  text-decoration: underline;
+}
+.ft-title {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+
+.ft-info {
+  color: #fff;
+}
+
+/* Footer main */
+.ft-main {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 660px) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 1240px) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+.ft-main-item {
+  padding: 1.25rem;
+  min-width: 12.5rem;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Footer social */
+.ft-social {
+  padding: 0 1.875rem 1.25rem;
+}
+
+.ft-social-list {
+  display: flex;
+  justify-content: center;
+  border-top: 1px rgb(151, 150, 150) solid;
+  padding-top: 1.25rem;
+}
+.ft-social-list li {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+/* Footer legal */
+.ft-legal {
+  padding: 0.9375rem 1.875rem;
+  background-color: rgb(63, 63, 63);
+}
+.ft-legal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ft-legal-list li {
+  margin: 0.125rem 0.625rem;
+  white-space: nowrap;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1024px) {
+  .heroPic {
+    max-width: 100%;
+    height: 100%;
+    align-items: center;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* IPhone SE */
+@media screen and (max-width: 450px) {
+  .navbar-logo-name {
+    font-family: 'Comfortaa', cursive;
+    margin: 23px 0 0 9px;
+    font-size: 12px;
+  }
+
+  .tea {
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 100%;
+    height: auto;
+    font-size: 100%;
+    padding: 30px 20px;
+    background-color: rgb(156, 131, 147);
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .sushi {
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 100%;
+    height: auto;
+    font-size: 120%;
+    padding: 30px 20px;
+    background-color: rgb(180, 156, 171);
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .store-header {
+    text-align: center;
+    padding-top: 110px;
+    font-size: 40px;
+  }
+
+  .hamburger-btn {
+    right: 20px;
+  }
+}
+
+@media screen and (min-height: 768px) {
+  .store-header {
+    text-align: center;
+    padding-top: 150px;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-height: 430px) {
+  section {
+    height: 180vh;
+  }
+
+  .heroPic {
+    margin: 150px auto;
+  }
+
+  .store-font {
+    margin-top: 100px;
+  }
+
+  .store-header {
+    padding-top: 0;
+  }
+}
